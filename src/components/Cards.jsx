@@ -301,11 +301,11 @@ const Cards = () => {
                   </div>
                   <div style={{ flex: "1", paddingLeft: "4px" }}>
                     <p className="flex flex-col pt-14 pr-5 text-md ">
-                      We're in a state of flux, but there's hope and
-                      unparalleled opportunity. Five trends explore people's
-                      evolving relationships with businesses and technology.
-                      What do you need to know to navigate the coming year and
-                      beyond?
+                    We are in a state of flux, but there is hope and
+                        unparalleled opportunity. Five trends explore people is
+                        evolving relationships with businesses and technology.
+                        What do you need to know to navigate the coming year and
+                        beyond?
                     </p>
                   </div>
                 </div>
