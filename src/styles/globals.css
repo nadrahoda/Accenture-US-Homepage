@@ -25,3 +25,152 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease forwards;
+}
+
+.text-container {
+  width: fit-content;
+  display: inline-block;
+  margin-right: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-container:hover {
+  transform: translateX(5px);
+}
+
+.container {
+  text-align: center;
+}
+
+.arrow {
+  background-color: blue;
+  color: white;
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.cardSection {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  margin: 20px;
+  background: #f0f0f0;
+  transition: flex-grow 0.3s ease;
+  height: 450px;
+  width: 400px;
+}
+.card:hover {
+  flex-grow: 2;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  padding-top: 50px;
+  padding-left: 20px;
+  display: flex;
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: left 0.5s ease-in-out;
+}
+
+.carousel-text.active {
+  left: -50%; 
+}
+.carousel-text h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.carousel-text p {
+  font-size: 16px;
+  margin-left: 56px;
+  padding-top: 10px;
+}
+
+.read-more {
+  background-color: purple;
+  color: white;
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}
